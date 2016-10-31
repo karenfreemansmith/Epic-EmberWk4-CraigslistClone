@@ -1,0 +1,18 @@
+{
+"listings": [{
+  "category": "personals",
+  "email": "desperate@susan.com",
+  "title": "seeking good man",
+  "body": "If you're a good man call me for a good time ;). I'm a good woman looking for a good man. Must like cats, I have 14."
+}, {
+  "category": "jobs",
+  "email": "hr@startup.com",
+  "title": "seeking entry jr dev",
+  "body": "Familiar with Html and Css. Will train on Haskell for out backend. starting pay $7.25 hour"
+}, {
+  "category": "housing",
+  "email": "houseGuy@rentMe.com",
+  "title": "seeking a good tennant",
+  "body": "Looking for a tennant that is clean and has no animals. Must have a strong rental history anf good credit. Background check required."
+}]
+}

@@ -1,1 +1,7 @@
-{{outlet}}
+<h1>Craigslist Clone</h1>
+
+<div class="row">
+  {{#each model as |category|}}
+    {{category-list category=category}}
+  {{/each}}
+</div>

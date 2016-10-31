@@ -1,1 +1,24 @@
-{{yield}}
+
+{{#if loggedin}}
+  {{#if listingDetails}}
+    {{#link-to 'index'}}<button {{action 'signout'}} class="pull-right">Sign-out</button>{{/link-to}}
+    <button {{action 'editing'}} class="pull-right">Edit</button>
+    <button {{action 'deleting'}} class="pull-right">Delete</button>
+  {{else}}
+    {{#link-to 'index'}}<button {{action 'signout'}} class="pull-right">Sign-out</button>{{/link-to}}
+    <button {{action 'adding'}} class="pull-right">Add Listing</button>
+  {{/if}}
+{{else}}
+  <button {{action 'signin'}} class="pull-right">Sign-In</button>
+{{/if}}
+
+{{#if loggedin}}
+  {{#if listingDetails}}
+    {{edit-listing}}
+    {{delete-listing}}
+  {{else}}
+    {{add-listing}}
+  {{/if}}
+{{else}}
+  <p>You must be signed in to use this.</p>
+{{/if}}

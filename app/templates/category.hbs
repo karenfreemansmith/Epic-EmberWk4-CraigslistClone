@@ -1,1 +1,5 @@
-{{outlet}}
+<h1>welcome</h1>
+
+{{#each model.listings as |listing|}}
+  {{list-listings listing=listing}}
+{{/each}}
